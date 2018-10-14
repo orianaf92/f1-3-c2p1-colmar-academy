@@ -1,0 +1,603 @@
+/* Universal Styles */
+
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+@media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2.5625rem;
+  }
+}
+
+/* Header */
+
+header{
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.logo-container span,
+.logo-container p {
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: 22px;
+}
+
+.logo-container span{
+  color: #005b7f;
+}
+
+.logo-container p{
+  font-weight: 400;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img{
+  height: 2.5rem;
+  margin-left: 24px;
+  margin-right: 2.5px;
+}
+
+nav {
+  padding-right: 24px;
+}
+
+nav span{
+  padding-left: 16px;
+}
+
+nav span:hover{
+  font-weight: bold;
+}
+
+#icon-nav {
+  display: none;
+}
+
+/* Header Mobile */
+
+@media only screen and (max-width: 700px) {
+  #text-nav {
+    display: none;
+  }
+  #icon-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    align-items: center;
+  }
+  #icon {
+    display: none;
+  }
+  #icon-nav a {
+    padding: 0rem 0.4rem;
+  }
+  p {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+
+@media only screen and (max-width: 485px) {
+  .logo-container {
+    display: none;
+  }
+  #icon {
+    display: flex;
+  }
+  #icon-nav {
+    width: 100%;
+  }
+  #icon-nav img {
+    height: 2rem;
+  }
+  header {
+    justify-content: space-between;
+    padding: 0rem 1.5rem;
+  }
+}
+
+/* Main Banner */
+
+p {
+  font-size: 16px;
+  margin: 0.43rem 0rem;
+  line-height: 1.15rem
+  letter-spacing: 0.2px;
+}
+
+.main-banner-text h4{
+  margin-left: 0rem;
+}
+
+.main-banner-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  padding-left: 40px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0.85rem 0rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin: 0px 8px;
+  margin-bottom: 0.75rem;
+  padding-top: 0.3rem;
+}
+
+.main-banner{
+  display: flex;
+  padding-left: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #d8d8d8;
+}
+
+#btn {
+  margin-top: 1rem;
+  text-align: center;
+  background-color: #005b7f;
+  color: white;
+  padding: 12px 0px;
+  margin-right: 1rem;
+  width: 50%;
+  font-weight: bold;
+}
+
+#btn:hover {
+  background-color: #4a4a4a;
+  transition: background-color, 0.5s, ease-out, 0.3s;
+}
+
+.banner-img{
+  min-width: 60%;
+  width: 60%;
+}
+
+.main-banner img{
+  width: 100%;
+}
+
+#mobile-banner-img {
+  display: none;
+}
+
+/* Main Banner Mobile */
+
+@media only screen and (max-width: 485px) {
+  .main-banner {
+    flex-direction: column;
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
+    align-items: center;
+  }
+  .main-banner .banner-img {
+    width: 100%;
+  }
+  .banner-img img {
+    display: none;
+  }
+  #mobile-banner-img {
+    display: flex;
+  }
+  .main-banner-text {
+    width: 100%;
+    align-items: center;
+    padding-left: 0px;
+  }
+  #btn {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    margin: 32px 0px;
+    padding: 0rem 1rem;
+    text-align: center;
+  }
+  .main-banner h4 {
+    padding-top: 0px;
+    padding: 0rem 1rem;
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+
+
+/* Info Banner */
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.75rem;
+  padding-top: 0.3rem;
+  letter-spacing: 1.33px;
+}
+
+.info-banner h4{
+  margin-left: 0rem;
+}
+
+.info-banner h3 {
+  padding-top: 32px;
+}
+
+.info-banner{
+  display: flex;
+  padding-left: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.left-content{
+  min-width: 60%;
+  width: 60%;
+}
+
+.info-banner .left-content img {
+  width: 100%;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  padding-left: 16px;
+}
+
+.right-content a {
+  color: #005b7f;
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+.right-content img{
+  width: 35%;
+  overflow: hidden;
+  height: 35%;
+  margin: 16px 16px;
+}
+
+#mobile-orientation-img,
+#mobile-campus-img,
+#mobile-lecture-img {
+  display: none;
+}
+
+.orientation img {
+  margin-top: 0px;
+}
+
+.right-content .orientation-text,
+.campus-text, .guest-text{
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.orientation,
+.campus,
+.guest-lecture {
+  display: flex;
+}
+
+.orientation p,
+.campus p,
+.guest-lecture p{
+  margin-top: 8px 0px;
+}
+
+.left-content p {
+  font-size: 15px;
+}
+
+/* Info Banner Mobile */
+
+@media only screen and (max-width: 485px) {
+  .info-banner {
+    padding: 16px 16px;
+    margin-bottom: 16px;
+  }
+
+  .left-content {
+    display: none;
+  }
+
+  .right-content,
+  .right-content .orientation, .orientation-text,
+  .right-content .campus, .campus-text,
+  .right-content .guest-lecture, .guest-text {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .right-content img {
+    display: none;
+  }
+
+  .right-content h4, .right-content p, .right-content span {
+    margin-left: 16px;
+    padding: 0rem 0rem;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+  .right-content p {
+    margin: 12px 16px;
+  }
+
+  .right-content span {
+    font-size: 12px;
+  }
+}
+
+/* Course Banner */
+
+.course-banner{
+  display: flex;
+  padding: 32px 72px;
+  background-color: #d8d8d8;
+}
+
+.course-banner,
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.courses {
+  width: 100%;
+  justify-content: center;
+}
+
+.courses img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.courses p {
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-left: 16px;
+  padding-bottom: 24px;
+  line-height: normal;
+}
+
+.courses h4{
+  padding-left: 16px;
+  font-weight: 600;
+  color:#005b7f;
+}
+
+#software-engineering, #computer-art, #design,
+#data, #business, #marketing {
+  width: 28%;
+  z-index: 5;
+  margin: 16px;
+  background-color: white;
+}
+
+/* Course Banner Mobile */
+
+@media only screen and (max-width: 485px) {
+#mobile-orientation-img,
+#mobile-campus-img,
+#mobile-lecture-img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 16px 0px;
+}
+
+.course-banner p,
+.course-banner img {
+  display: none;
+}
+
+.course-banner {
+  padding: 0px 16px;
+  margin-bottom: 16px;
+  background-color: white;
+}
+
+.courses {
+  flex-direction: column;
+}
+
+#software-engineering, #computer-art,
+#design, #data, #business, #marketing {
+  width: 100%;
+  margin: 4px 0px;
+  padding-bottom: 0px;
+  background-color: #d8d8d8;
+}
+
+.course-banner h3 {
+  margin-bottom: 16px;
+}
+
+.courses h4 {
+  padding: 0rem 0rem;
+  margin: 16px 16px;
+  font-weight: 700;
+}
+
+.courses p {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+}
+
+
+/* Thesis Banner */
+
+.title {
+  text-align: center;
+  width: 100%;
+  padding-top: 32px;
+}
+
+.thesis-banner {
+  display: flex;
+  padding-left: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.video-content {
+  min-width: 60%;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video-content h4{
+  padding-top: 24px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.right-column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.right-column h4 {
+  margin-left: 0rem;
+}
+
+#fisma img,
+#research img {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+  margin: 16px 16px;
+}
+
+.fisma-text,
+.research-text {
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.video-content h4 {
+  margin: 10px 0px;
+}
+
+.thesis-banner,
+.video-content,
+.right-column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info-banner .right-content p,
+.thesis-banner .right-column p {
+  padding-right: 0.5rem;
+}
+
+.thesis-banner h4{
+  font-weight: 600;
+  color:#005b7f;
+}
+
+#fisma, #research {
+  display: flex;
+  align-items: center;
+  height: 35%;
+}
+
+#fisma img, #fisma,
+#research img, #research {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.thesis-banner .video-column p {
+  margin-left: 24px;
+}
+
+/* Thesis Banner Mobile */
+
+@media only screen and (max-width: 485px) {
+  .thesis-banner .right-column,
+  .thesis-banner h4, .thesis-banner p {
+      display: none;
+  }
+
+  .thesis-banner .video-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .thesis-banner {
+    padding: 0px 16px;
+  }
+
+  .title {
+    margin-top: 16px;
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d8d8d8;
+}
+
+footer p {
+  padding: 0px 24px;
+  margin: 3rem 0rem;
+  font-size: 13px;
+  color: #4a4a4a;
+}
+
+/* Footer Mobile */
+
+footer .terms-privacy {
+  display: none;
+}
+footer p {
+  padding-top: 16px;
+  font-size: 13px;
+}
+}
